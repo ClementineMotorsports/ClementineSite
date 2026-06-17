@@ -40,8 +40,8 @@ function initContactForm() {
     const message = form.querySelector('[name="message"]').value || '';
     const subject = encodeURIComponent('Rental Inquiry — ' + vehicle);
     const body    = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nPhone: ' + phone + '\nVehicle: ' + vehicle + '\nDates: ' + dates + '\n\nMessage:\n' + message);
-    window.location.href = 'mailto:hello@clementinemotorsports.com?subject=' + subject + '&body=' + body;
-    form.innerHTML = '<div style="text-align:center;padding:3rem 2rem;"><div style="font-family:Oxanium,sans-serif;font-weight:800;font-size:1.4rem;color:var(--clem);margin-bottom:1rem;text-transform:uppercase;letter-spacing:.05em;">Request Sent</div><p style="color:var(--dim);font-size:.92rem;line-height:1.7;">Your mail client should have opened. If not, email us directly at <a href="mailto:hello@clementinemotorsports.com" style="color:var(--clem);">hello@clementinemotorsports.com</a></p></div>';
+    window.location.href = 'mailto:info@clementinemotorsports.com?subject=' + subject + '&body=' + body;
+    form.innerHTML = '<div style="text-align:center;padding:3rem 2rem;"><div style="font-family:Oxanium,sans-serif;font-weight:800;font-size:1.4rem;color:var(--clem);margin-bottom:1rem;text-transform:uppercase;letter-spacing:.05em;">Request Sent</div><p style="color:var(--dim);font-size:.92rem;line-height:1.7;">Your mail client should have opened. If not, reach us at <a href="tel:+12242162404" style="color:var(--white);">(224) 216-2404</a> or <a href="mailto:info@clementinemotorsports.com" style="color:var(--clem);">info@clementinemotorsports.com</a></p></div>';
   });
 }
 
