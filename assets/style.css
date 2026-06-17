@@ -24,7 +24,7 @@
 
 /* ── RESET ── */
 *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
-html { scroll-behavior:smooth; }
+html { scroll-behavior:smooth; overflow-x:hidden; }
 
 body {
   background: var(--black);
@@ -590,3 +590,16 @@ footer { background:var(--black); border-top:1px solid var(--border); padding:4r
 /* ── CATEGORY GRID ── */
 @media (max-width:960px) { .cat-cards-grid { grid-template-columns:1fr 1fr !important; } }
 @media (max-width:600px) { .cat-cards-grid { grid-template-columns:1fr !important; } .cat-cards-grid > a { padding:1.2rem !important; } }
+
+/* ── HERO CONTENT PADDING ── */
+.hero-content { padding:0 4rem 5rem; }
+@media (max-width:960px) { .hero-content { padding:0 1.8rem 4rem; } }
+@media (max-width:600px) { .hero-content { padding:0 1.2rem 3.5rem; } }
+
+/* ── FLEET GRID: force 1-col on mobile even with inline column overrides ── */
+@media (max-width:600px) { .fleet-grid { grid-template-columns:1fr !important; } }
+
+/* ── GALLERY: override inline height:100% on mobile so images size correctly ── */
+@media (max-width:960px) {
+  .g-main img, .g-thumb img { height:auto !important; position:relative !important; }
+}
