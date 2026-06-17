@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact & Book | Clementine Motorsports — Exotic Car Rental Chicago</title>
+  <meta name="description" content="Book an exotic, luxury, or performance car rental in Chicago. Contact Clementine Motorsports for Lamborghini Urus, Bentley Bentayga, Corvette C8, AMG GT C, G-Wagon, BMW M240i manual, and Tesla Model Y rental inquiries." />
+  <meta name="keywords" content="book exotic car rental Chicago, contact Clementine Motorsports, reserve luxury car Chicago, exotic rental inquiry Chicago, book Lamborghini Chicago, book Bentley Chicago, manual transmission rental booking Chicago" />
+  <link rel="canonical" href="https://clementinemotorsports.com/contact.html" />
+  <link rel="icon" href="./assets/icon-orange.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="./assets/style.css" />
+  <style>
+    .contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:start; }
+    .turo-link {
+      display:flex; align-items:center; justify-content:space-between;
+      background:var(--carbon); padding:1.2rem 1.5rem; margin-bottom:1px;
+      text-decoration:none; border-left:2px solid var(--clem); transition:background .15s;
+    }
+    .turo-link:hover { background:var(--steel); }
+    .turo-link-title { font-family:'Oxanium',sans-serif; font-weight:700; font-size:1rem; letter-spacing:.05em; text-transform:uppercase; color:var(--white); }
+    .turo-link-sub { font-family:'Rajdhani',sans-serif; font-size:0.92rem; letter-spacing:.2em; text-transform:uppercase; color:var(--text-sec); margin-top:2px; }
+    .turo-link-arrow { font-family:'Oxanium',sans-serif; font-size:0.92rem; letter-spacing:.15em; text-transform:uppercase; color:var(--clem); flex-shrink:0; }
+    .step-row { display:flex; gap:1rem; align-items:flex-start; margin-bottom:1rem; }
+    .step-num { font-family:'Oxanium',sans-serif; font-weight:800; font-size:1rem; color:var(--clem); flex-shrink:0; }
+    .step-text { font-family:'Rajdhani',sans-serif; font-size:1rem; color:var(--text-sec); line-height:1.55; }
+    .footer-logo-col { display:flex; flex-direction:column; }
+    @media(max-width:960px){ .contact-grid { grid-template-columns:1fr; gap:2.5rem; } }
+  </style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="./index.html"><img src="./assets/logo-white.svg" alt="Clementine Motorsports" /></a>
+  <div class="nav-right">
+    <a class="nav-link" href="./index.html">Home</a>
+    <a class="nav-link" href="./fleet.html">Fleet</a>
+    <a class="nav-link active" href="./contact.html">Contact</a>
+    <a class="nav-cta" href="./contact.html">Book Now</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <div class="mobile-logo"><img src="./assets/logo-white.svg" alt="Clementine Motorsports" /></div>
+  <a href="./index.html">Home</a><a href="./fleet.html">Fleet</a><a href="./contact.html">Contact</a>
+  <a href="./contact.html" class="mobile-cta">Book Now</a>
+</div>
+<div class="breadcrumb page-top"><a href="./index.html">Home</a><span>›</span> Contact & Book</div>
+
+<!-- HEADER -->
+<section class="sec-dark" style="padding-top:4rem;padding-bottom:3.5rem;position:relative;">
+  <div style="position:absolute;top:0;left:0;bottom:0;width:3px;background:var(--clem);"></div>
+  <div style="margin-bottom:2rem;"><img src="./assets/logo-orange.svg" alt="Clementine Motorsports" style="height:44px;width:auto;" /></div>
+  <p class="sec-label">Clementine Motorsports · Chicago</p>
+  <h1 style="font-family:'Oxanium',sans-serif;font-weight:800;font-size:clamp(2.8rem,6vw,5.5rem);line-height:0.92;letter-spacing:-0.02em;text-transform:uppercase;margin-bottom:1rem;">
+    Book a <span style="color:var(--clem);">Vehicle.</span>
+  </h1>
+  <p style="font-family:'Rajdhani',sans-serif;font-size:1rem;color:var(--body-text);max-width:540px;line-height:1.7;">Fill out the form and we'll confirm availability within a few hours. For Turo-listed vehicles, you can also book directly — links on each vehicle page.</p>
+</section>
+
+<section class="sec">
+  <div class="contact-grid">
+    <!-- FORM -->
+    <div>
+      <p class="sec-label">Send an Inquiry</p>
+      <h2 style="font-size:clamp(1.8rem,3vw,2.5rem);margin-bottom:2rem;">Let's get you <span class="o">behind the wheel.</span></h2>
+      <form class="contact-form" id="contact-form">
+        <div class="form-row">
+          <div class="form-group"><label for="name">Full Name *</label><input type="text" id="name" name="name" placeholder="Your name" required /></div>
+          <div class="form-group"><label for="email">Email *</label><input type="email" id="email" name="email" placeholder="you@email.com" required /></div>
+        </div>
+        <div class="form-group"><label for="phone">Phone Number</label><input type="tel" id="phone" name="phone" placeholder="+1 (312) 000-0000" /></div>
+        <div class="form-group">
+          <label for="vehicle">Vehicle of Interest *</label>
+          <select id="vehicle" name="vehicle" required>
+            <option value="" disabled selected>Select a vehicle</option>
+            <option value="Lamborghini Urus ">Lamborghini Urus — 641 HP Exotic SUV</option>
+            <option value="Bentley Bentayga ">Bentley Bentayga — W12 Ultra Luxury</option>
+            <option value="Corvette C8 3LT Z51 ">Corvette C8 3LT Z51 — Mid-Engine</option>
+            <option value="Mercedes AMG GT C Convertible ">Mercedes AMG GT C — Exotic Convertible</option>
+            <option value="Mercedes G63 AMG G-Wagon ">Mercedes G63 AMG G-Wagon </option>
+            <option value="BMW M240i 6-Speed Manual ">BMW M240i — 6-Speed Manual Transmission</option>
+            <option value="Tesla Model Y Long Range ">Tesla Model Y — Electric · Autopilot</option>
+            <option value="BMW X3 xDrive ">BMW X3 xDrive — Luxury AWD</option>
+            <option value="Not sure — help me choose">Not sure — help me choose</option>
+          </select>
+        </div>
+        <div class="form-group"><label for="dates">Desired Dates</label><input type="text" id="dates" name="dates" placeholder="e.g. July 4–6, 2025" /></div>
+        <div class="form-group"><label for="message">Additional Details</label><textarea id="message" name="message" placeholder="Questions, requirements, or anything else..."></textarea></div>
+        <button type="submit" class="btn-main" style="width:100%;text-align:center;font-size:1rem;padding:1rem;">Send Inquiry →</button>
+        <p style="margin-top:0.8rem;font-family:'Rajdhani',sans-serif;font-size:0.95rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text-sec);text-align:center;">We respond within a few hours · Chicago, IL</p>
+      </form>
+    </div>
+
+    <!-- SIDEBAR -->
+    <div>
+      <p class="sec-label">Book Directly</p>
+      <h2 style="font-size:clamp(1.8rem,3vw,2.5rem);margin-bottom:1.5rem;">Turo-listed <span class="o">vehicles.</span></h2>
+      <p style="font-family:'Rajdhani',sans-serif;font-size:0.9rem;line-height:1.65;color:var(--text-sec);margin-bottom:1.2rem;">Some vehicles can be booked immediately on Turo. Click below to check availability:</p>
+
+      <a href="https://turo.com/us/en/car-rental/united-states/chicago-il/bmw/2-series/3420428" target="_blank" class="turo-link">
+        <div><div class="turo-link-title">BMW M240i</div><div class="turo-link-sub">6-Speed Manual · Turo</div></div>
+        <span class="turo-link-arrow">Book →</span>
+      </a>
+      <div style="background:var(--carbon);padding:1.2rem 1.5rem;margin-bottom:1px;border-left:2px solid var(--border);">
+        <div class="turo-link-title" style="color:var(--text-sec);">All Other Vehicles</div>
+        <div style="font-family:'Rajdhani',sans-serif;font-size:1rem;color:var(--text-sec);margin-top:5px;line-height:1.6;">For Lamborghini, Bentley, Corvette, AMG GT C, G-Wagon, Tesla &amp; X3 — use the inquiry form. We'll reply with Turo links or direct booking details.</div>
+      </div>
+
+      <div style="margin-top:2rem;border-top:1px solid var(--border);padding-top:2rem;">
+        <p class="sec-label">Direct Contact</p>
+        <a href="mailto:hello@clementinemotorsports.com" style="display:block;font-family:'Oxanium',sans-serif;font-weight:700;font-size:1rem;letter-spacing:.05em;color:var(--clem);text-decoration:none;margin-bottom:0.5rem;">hello@clementinemotorsports.com</a>
+        <p style="font-family:'Rajdhani',sans-serif;font-size:0.92rem;color:var(--body-text);line-height:1.65;">Chicago, IL · Response within a few hours</p>
+      </div>
+
+      <div style="margin-top:2rem;background:var(--carbon);padding:1.8rem;border-top:2px solid var(--clem);">
+        <p class="sec-label" style="margin-bottom:1.2rem;">What to Expect</p>
+        <div class="step-row"><span class="step-num">01</span><p class="step-text">Submit your inquiry with preferred vehicle and dates</p></div>
+        <div class="step-row"><span class="step-num">02</span><p class="step-text">We confirm availability and send booking details within hours</p></div>
+        <div class="step-row"><span class="step-num">03</span><p class="step-text">Pickup in Chicago — exact location confirmed after booking</p></div>
+        <div class="step-row"><span class="step-num">04</span><p class="step-text">Drive.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FLEET QUICK TILES -->
+<section class="sec-dark fade-up">
+  <p class="sec-label">Not sure which vehicle?</p>
+  <h2>Browse the <span class="o">fleet.</span></h2>
+  <div class="fleet-grid">
+    <a class="fleet-tile" href="vehicles/lamborghini-urus.html"><div class="fleet-tile-img"><img src="./assets/urus-1.jpg" alt="Lamborghini Urus rental Chicago" style="width:100%;height:100%;object-fit:cover;" /></div><div class="fleet-tile-info"><div class="fleet-tile-model">Lamborghini <span>Urus</span></div><div class="fleet-tile-year">Exotic SUV · 641 HP</div></div></a>
+    <a class="fleet-tile" href="vehicles/bentley-bentayga.html"><div class="fleet-tile-img"><img src="./assets/bentayga-1.webp" alt="Bentley Bentayga rental Chicago" style="width:100%;height:100%;object-fit:cover;" /></div><div class="fleet-tile-info"><div class="fleet-tile-model">Bentley <span>Bentayga</span></div><div class="fleet-tile-year">Ultra Luxury · W12</div></div></a>
+    <a class="fleet-tile" href="vehicles/corvette-c8.html"><div class="fleet-tile-img"><img src="./assets/corvette-c8-1.jpeg" alt="Corvette C8 rental Chicago" style="width:100%;height:100%;object-fit:cover;" /></div><div class="fleet-tile-info"><div class="fleet-tile-model">Corvette <span>C8 Z51</span></div><div class="fleet-tile-year">Mid-Engine · 495 HP</div></div></a>
+    <a class="fleet-tile" href="vehicles/mercedes-amg-gtc.html"><div class="fleet-tile-img"><img src="./assets/amg-gtc-1.avif" alt="Mercedes AMG GT C rental Chicago" style="width:100%;height:100%;object-fit:cover;" /></div><div class="fleet-tile-info"><div class="fleet-tile-model">Mercedes <span>AMG GT C</span></div><div class="fleet-tile-year">Convertible · 550 HP</div></div></a>
+    <a class="fleet-tile" href="vehicles/mercedes-g63.html"><div class="fleet-tile-img"><img src="./assets/g63-1.jpg" alt="Mercedes G63 rental Chicago" style="width:100%;height:100%;object-fit:cover;" /></div><div class="fleet-tile-info"><div class="fleet-tile-model">Mercedes <span>G63 AMG</span></div><div class="fleet-tile-year">G-Wagon · 563 HP</div></div></a>
+    <a class="fleet-tile" href="vehicles/bmw-m240i.html"><div class="fleet-tile-img"><img src="./assets/bmw-m240i-1.jpeg" alt="BMW M240i manual" /></div><div class="fleet-tile-info"><div class="fleet-tile-model">BMW <span>M240i</span></div><div class="fleet-tile-year">6-Speed Manual · Stick Shift</div></div></a>
+  </div>
+  <div style="text-align:center;margin-top:2rem;"><a class="btn-main" href="./fleet.html">View All 8 Vehicles →</a></div>
+</section>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-logo-col">
+      <div class="footer-logo"><img src="./assets/logo-white.svg" alt="Clementine Motorsports" /></div>
+      <p class="footer-tagline">Chicago's premier exotic &amp; performance car rental fleet.</p>
+    </div>
+    <div class="footer-col"><h4>Exotic Fleet</h4><a href="vehicles/lamborghini-urus.html">Lamborghini Urus</a><a href="vehicles/bentley-bentayga.html">Bentley Bentayga</a><a href="vehicles/corvette-c8.html">Corvette C8 3LT Z51</a><a href="vehicles/mercedes-amg-gtc.html">Mercedes AMG GT C</a><a href="vehicles/mercedes-g63.html">Mercedes G63 AMG</a></div>
+    <div class="footer-col"><h4>More Vehicles</h4><a href="vehicles/bmw-m240i.html">BMW M240i — Manual</a><a href="vehicles/tesla-model-y.html">Tesla Model Y — EV</a><a href="vehicles/bmw-x3.html">BMW X3</a></div>
+    <div class="footer-col"><h4>Navigate</h4><a href="./index.html">Home</a><a href="./fleet.html">Full Fleet</a><a href="./contact.html">Contact &amp; Book</a><a href="mailto:hello@clementinemotorsports.com">Email Us</a></div>
+  </div>
+  <div class="footer-bottom"><p>© 2025 Clementine Motorsports LLC · Chicago, IL · All Rights Reserved</p><p>Exotic car rental · Luxury car rental · Manual transmission · Electric vehicle · Chicago</p></div>
+</footer>
+<script src="./assets/main.js"></script>
+</body>
+</html>
