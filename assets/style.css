@@ -594,7 +594,8 @@ footer { background:var(--black); border-top:1px solid var(--border); padding:4r
 /* ── HERO CONTENT PADDING ── */
 .hero-content { padding:0 5rem 5rem; }
 @media (max-width:960px) { .hero-content { padding:0 3rem 4rem; } }
-@media (max-width:600px) { .hero-content { padding:0 1.5rem 3.5rem; } }
+@media (max-width:600px) { .hero-content { padding:0 1.8rem 3.5rem; } }
+@media (max-width:390px) { .hero-content { padding:0 1.4rem 3rem; } }
 
 /* ── TESTIMONIALS ── */
 .testimonials-grid {
