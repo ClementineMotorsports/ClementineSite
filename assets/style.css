@@ -147,8 +147,8 @@ nav::before {
 .breadcrumb span { margin:0 0.5rem; color:var(--border-o); }
 
 /* ── SECTIONS ── */
-.sec      { padding:7rem 5rem; }
-.sec-dark { padding:7rem 5rem; background:var(--asphalt); }
+.sec      { padding:4.5rem 5rem; }
+.sec-dark { padding:4.5rem 5rem; background:var(--asphalt); }
 
 .sec-label {
   font-family:'Rajdhani',sans-serif; font-weight:700;
@@ -357,7 +357,7 @@ h2 .o { color:var(--clem); }
 
 /* ── CTA BAND ── */
 .cta-band {
-  background:var(--clem); padding:5.5rem 5rem;
+  background:var(--clem); padding:4rem 5rem;
   display:flex; align-items:center; justify-content:space-between;
   gap:3rem; position:relative; overflow:hidden;
 }
@@ -487,7 +487,7 @@ footer { background:var(--black); border-top:1px solid var(--border); padding:4r
   .hamburger { display:flex; }
 
   .breadcrumb { padding:0.9rem 2.5rem; }
-  .sec, .sec-dark { padding:5rem 3rem; }
+  .sec, .sec-dark { padding:3.5rem 3rem; }
 
   .fleet-grid { grid-template-columns:1fr 1fr; }
   .stat-band { grid-template-columns:1fr 1fr; }
@@ -498,7 +498,7 @@ footer { background:var(--black); border-top:1px solid var(--border); padding:4r
   .g-main { grid-row:span 1; }
   .g-main img, .g-thumb img { position:relative; aspect-ratio:16/9; height:auto; }
 
-  .cta-band { flex-direction:column; text-align:center; padding:4rem 3rem; gap:2.5rem; }
+  .cta-band { flex-direction:column; text-align:center; padding:3rem 3rem; gap:2.5rem; }
   .footer-top { grid-template-columns:1fr 1fr; gap:2.5rem; }
 
   .v-hero { grid-template-columns:1fr; min-height:unset; }
@@ -517,7 +517,7 @@ footer { background:var(--black); border-top:1px solid var(--border); padding:4r
   nav { padding:0 1.2rem; }
   .nav-logo img { height:30px; }
 
-  .sec, .sec-dark { padding:3.5rem 1.5rem; }
+  .sec, .sec-dark { padding:2.5rem 1.5rem; }
   h2 { font-size:clamp(2rem, 8.5vw, 2.8rem); margin-bottom:1.8rem; }
 
   /* All grids → single column */
@@ -544,7 +544,7 @@ footer { background:var(--black); border-top:1px solid var(--border); padding:4r
   .btn-row { flex-direction:column; }
 
   /* CTA band */
-  .cta-band { padding:3.5rem 1.5rem; }
+  .cta-band { padding:2.5rem 1.5rem; }
   .cta-band h2 { font-size:clamp(2rem, 8vw, 2.8rem); }
   .cta-band p { font-size:1.05rem; }
   .cta-note { font-size:0.88rem; }
