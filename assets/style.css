@@ -220,13 +220,18 @@ h2 .o { color:var(--clem); }
 .pill {
   display:inline-block;
   font-family:'Rajdhani',sans-serif; font-weight:700;
-  font-size: 0.85rem;       /* was 0.58 */
+  font-size: 0.85rem;
   letter-spacing:0.12em; text-transform:uppercase;
-  border:1px solid var(--clem); color:var(--clem);
-  background:var(--clem-glow);
-  padding:0.38rem 0.9rem;   /* bigger */
+  border:1px solid rgba(255,107,26,0.5); color:var(--clem);
+  background:rgba(10,10,10,0.5);
+  backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
+  padding:0.38rem 0.9rem;
 }
-.pill.hi { border-color:var(--clem); color:var(--clem); background:var(--clem-glow); }
+.pill.hi {
+  border-color:var(--clem); color:var(--clem);
+  background:rgba(255,107,26,0.18);
+  backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
+}
 .pill-row { display:flex; flex-wrap:wrap; gap:0.55rem; margin-bottom:2rem; }
 
 /* ── FLEET GRID ── */
