@@ -592,9 +592,9 @@ footer { background:var(--black); border-top:1px solid var(--border); padding:4r
 @media (max-width:600px) { .cat-cards-grid { grid-template-columns:1fr !important; } .cat-cards-grid > a { padding:1.2rem !important; } }
 
 /* ── HERO CONTENT PADDING ── */
-.hero-content { padding:0 8rem 5rem; }
-@media (max-width:960px) { .hero-content { padding:0 5rem 4rem; } }
-@media (max-width:600px) { .hero-content { padding:0 2rem 3.5rem; } }
+.hero-content { padding:0 5rem 5rem; }
+@media (max-width:960px) { .hero-content { padding:0 3rem 4rem; } }
+@media (max-width:600px) { .hero-content { padding:0 1.5rem 3.5rem; } }
 
 /* ── TESTIMONIALS ── */
 .testimonials-grid {
